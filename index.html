@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Zhenyu Yang | The Adventurer</title>
+  <meta name="description" content="I'll gradually build my portfolio here.">
+  <meta name="author" content="Zhenyu Yang">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  
+   <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+<header class="main_nav green">
+	<div class="container">
+		<div class="twelve columns">
+			<div class="logo"><a href="#">Zhenyu Yang</a></div>
+		</div>
+	</div>
+</header>
+
+<div class="container main">
+	<div class="row">
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/sap.jpg">
+                <img src="images/sap.jpg" />
+            </a>
+            <p class="caption">This is for a single-page application</p>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/project_placeholder.png">
+                <img src="images/project_placeholder.png" />
+            </a>
+            <p class="caption">This is for a node.js chat application</p>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/project_placeholder.png">
+                <img src="images/project_placeholder.png" />
+            </a>
+            <p class="caption">This is for a django social network application</p>
+		</div>
+	</div>
+	
+</div><!--Container-->
+
+<div class="row green">
+	<div class="container">
+		<div class="four columns">
+			<img class="avatar" src="images/me.jpg" />
+		</div>
+		<div class="eight columns">
+			<h2 class="bio">About Zhenyu Yang</h2>
+			<p class="bio">I'm a student from China, with a Master degree of Computer Science. Currently I'm living with my wife in New York, and I've made up my mind to start a new life here. I can build web apps from scratch using several languages and frameworks. I'll add portfolios gradually to show what I'm capable of. 
+            <br />
+            I'm a very talented guy and I work really hard. All I need is a chance.</p>
+		</div>
+	</div>
+</div><!--Row Green-->
+	
+<footer>
+	<div class="container">
+		<div class="row twelve columns">
+			<ul class="social">
+			<li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+			<li class="twitter"><a href="https://twitter.com/andyoungnyc" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+			<li class="instagram"><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+			<li class="flickr"><a href="#"><i class="fa fa-flickr fa-lg"></i></a></li>
+			<li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
+			<li class="linkedin"><a href="https://www.linkedin.com/in/zhenyu-yang-150638133/" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+			</ul>
+		</div>
+		<div class="row twelve columns">
+			<p class="copyright">&copy; 2017 Andy Yang the Adventurer. All Rights Reserved.</p>
+		</div>
+	</div>
+</footer>
+	
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+	 $('.image-link').magnificPopup({ 
+      type: 'image',
+      mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+      zoom: {
+        enabled: true, // By default it's false, so don't forget to enable it
+
+        duration: 300, // duration of the effect, in milliseconds
+        easing: 'ease-in-out', // CSS transition easing function 
+
+        // The "opener" function should return the element from which popup will be zoomed in
+        // and to which popup will be scaled down
+        // By defailt it looks for an image tag:
+        opener: function(openerElement) {
+          // openerElement is the element on which popup was initialized, in this case its <a> tag
+          // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+          return openerElement.is('img') ? openerElement : openerElement.find('img');
+        }
+      }
+    });	
+     </script>
+</body>
+</html>
